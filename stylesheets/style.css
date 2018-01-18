@@ -1,6 +1,115 @@
-/* line 3, ../sass/style.scss */
-.shadow {
-  -moz-box-shadow: #000 5px 5px 5px;
-  -webkit-box-shadow: #000 5px 5px 5px;
-  box-shadow: #000 5px 5px 5px;
+/* line 9, ../sass/style.scss */
+body, html, .body {
+  background: #5e5656 !important;
+}
+
+/* line 14, ../sass/style.scss */
+.carousel-inner {
+  width: 100%;
+  max-height: 450px !important;
+}
+
+/* fiksiranje teksta da ne zavisi od velicine slike carousel */
+@media only screen and (min-width: 1200px) {
+  /* line 23, ../sass/style.scss */
+  .carousel-caption {
+    top: 30%;
+  }
+}
+/* line 29, ../sass/style.scss */
+.navbar {
+  background-color: lightpink;
+  border: 0;
+}
+
+/*Scroll design*/
+/* line 42, ../sass/style.scss */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 62, ../sass/style.scss */
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 75, ../sass/style.scss */
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* line 78, ../sass/style.scss */
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+/* line 86, ../sass/style.scss */
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+
+/* line 90, ../sass/style.scss */
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+
+/* line 97, ../sass/style.scss */
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+
+/* line 100, ../sass/style.scss */
+.footer a:hover {
+  color: white;
+}
+
+/* line 103, ../sass/style.scss */
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* line 108, ../sass/style.scss */
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }

@@ -8,7 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!--<link href="stylesheets/normalize.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+     <link href="stylesheets/style.css" rel="stylesheet">
+ 
     <title>Portfolio</title>
 </head>
     
@@ -28,10 +34,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
         <li><a class="nav-link" href="#work">Work</a></li>
-        <li><a href="#contact" data-toggle="modal">Contact</a></li>
+        <li><a class="nav-link" href="#contact" data-toggle="modal">Contact</a></li>
       </ul>
       
     </div>
@@ -39,15 +45,67 @@
          
 </nav>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
-  </div>
-</div>
     
-    <div id="work">
-<div class="container-fluid bg-3 text-center">    
+    <!--Slider-->
+
+  <div class="container-fluid">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+      
+      
+      
+      
+      
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="d-block w-100" src="img/cover-gb.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Programming</h3>
+        <p> much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="d-block w-100" src="img/cover-bg.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>Code</h3>
+        <p>Nice nice!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img class="d-block w-100" src="img/cover.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>Love</h3>
+        <p>Love it!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  
+
+      <!--Work section-->
+      
+    <div class="section" id="work">
+<div class=" container-fluid bg-3 text-center">    
   <h3>Some of my Work</h3><br>
   <div class="row">
     <div class="col-sm-4">
@@ -79,10 +137,14 @@
       <p>Some text..</p>
       <img src="https://placehold.it/120x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
     </div>
-   
+ 
   </div>
         </div>
 </div><br><br>
+      
+      <!--About section-->
+      
+      
     <div id="about">
         <h2>CV</h2>
         <p>Technologies</p>
@@ -90,14 +152,26 @@
         <p>PDF CV</p>
     </div>
 
+    </div>
+    
+    
+    
+    
+    <!--Scroll to top html-->
 
-
-
-
-
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+ 
+    
+    
+    
 <!--Footer-->
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="footer">
+  <div class="container text-center">
+    <a href="https://www.facebook.com/jovannahh" target="_blank"><i class="fa fa-facebook fa-2x social"></i></a>
+    <a href="" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+      <a href="https://www.linkedin.com/in/jovana-josi%C4%87-2a8889110/" target="_blank"><i class="fa fa-linkedin  social fa-2x"></i></a>
+ 
+  </div>
 </footer>
     
     
@@ -130,7 +204,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-default" data-dismiss="modal">Close</a>
+                <a class="btn btn-default" data-dismis="modal">Close</a>
+
                 <button type="submit" class="btn btn-primary">Send</button>
             </div>
         </form>
@@ -142,6 +217,27 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+    
+    
+ <!--SCROLL TO TOP script-->
+    
+<script>
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        
+        $('#return-to-top').fadeIn(200);    
+    } else {
+        $('#return-to-top').fadeOut(200);   
+    }
+});
+$('#return-to-top').click(function() {      
+    $('body,html').animate({
+        scrollTop : 0                     
+    }, 500);
+});
+    
+    
+    </script>
 
 </body>
 </html>
