@@ -1,13 +1,9 @@
 
     
-$background-color:#dddddd;
-
-
-
 
 
 body, html, .body {
-    background: #5e5656 !important;
+    background: #fff;
    
 }
 
@@ -28,11 +24,153 @@ body, html, .body {
 
 .navbar {
    
-    background-color: lightpink;
+    background-color: #ffffff;
     border: 0;
+    font-weight:bold;
+ 
+  
+}
+.navbar a:hover{
+     color: black !important
+}
+.navbar li a:active{
+    border: 0; 
+    color: black !important;
+}
+.navbar li a{
+      font-size: 20px;
     
+      -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+    border-radius: 25px;
+    border-style: inherit;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
 }
 
+.navbar li a:hover {
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+     -o-transform: scale(1);
+      background-color: aqua;
+     
+}
+.nav-bar nav-link a{
+      color: black !important;
+}
+.col-sm-4{
+   list-style: none;
+  
+}
+/*Section Contact*/
+
+.modal-dialog{
+    border: 0;
+    opacity: 0.9;
+}
+
+
+
+
+
+/*Slikee WORK animacija*/
+
+@-webkit-keyframes swing
+{
+    30%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(-3px);
+       transform: translateX(-3px);
+    } 
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+   /* 80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }*/
+}
+@keyframes swing
+{
+    30%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    /*80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }*/
+}
+.slika:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+.slika {
+    height: 300px;
+    width: 260px;
+}
+
+
+
+
+/*ABOUT SECTIONNN*/
+
+.col-sm-12 {
+    background-image: url(sky.jpg) !important;
+    background-attachment: fixed;
+    
+}
 
 
 
@@ -83,22 +221,24 @@ body, html, .body {
 
 
 
+/*FOOOOOOOTER*/
+
+
 .footer {
-  background: #061D25;
+  background-color: shade(#D3D3D3, 42%);;
   padding: 10px 0;
+
 }
 .footer a {
-  color: #70726F;
+  color: blue;
   font-size: 20px;
   padding: 10px;
-  border-right: 1px solid #70726F;
   transition: all .5s ease;
+
 }
-.footer a:first-child {
-  border-left: 1px solid #70726F;
-}
+
 .footer a:hover {
-  color: white;
+  color: darkblue;
 }
 .social:hover {
      -webkit-transform: scale(1.1);
